@@ -1,0 +1,6 @@
+elim = 10
+iBound = 22
+be = 1
+usePruning = 0
+#xp = 10
+

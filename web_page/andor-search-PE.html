@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+
+<body>
+
+<a name="top"></a>
+
+<div id="wrapper">
+
+   <table width="100%" cellspacing="0" cellpadding="10" border="0">
+
+      <tr>
+         <td valign="top">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+               <tr>
+                  <td align="left">
+
+                     <div class="research">
+
+
+
+
+
+			                       
+                        <div class="research-title">AND/OR search for graphical models</div>
+
+			<p>
+			   Graphical models are widely used frameworks for knowledge representation. Examples include Bayesian 
+			   networks, constraint networks, Markov random fields and influence diagrams. They all use graphs to 
+			   capture conditional independencies between variables. The independencies allow both a concise representation,
+			   and efficient graph-based algorithms for query processing.
+			</p>
+
+			<p>
+			   AND/OR search is conditioning algorithm that exploits the structure of the graphical model. Its execution is
+			   guided by a <i>pseudo tree</i> that spans the graph, capturing the decomposition into independent components.
+			   The AND/OR <i>tree</i> can be exponentially smaller than the standard backtrack tree, being exponential in the 
+			   depth of the pseudo tree, rather than the number of variables. When memory is available, the results of the computation
+			   in some subtrees can be cached (indexed by the <i>context</i>, or current partial assignment) and reused. The resulting 
+			   AND/OR <i>graph</i> is exponential in the <i>treewidth</i> of the graph, rather than <i>pathwidth</i>.
+			</p>
+
+                        <table border="0" align="center" cellpadding="10" cellspacing="0" width="100%">
+                           <tr valign="top" align="center">
+                              <td align="center">
+                                 <img class="research-image" src="images/andor_test.png" alt="Computing P(D=1,E=0) by AND/OR search">
+                              </td>
+                           </tr>
+                           <tr valign="top" align="center">
+                              <td align="center">
+                                 <div class="fig-caption">Computing P(D=1,E=0) by AND/OR tree search</div>
+                              </td>
+                           </tr>
+                        </table>
+
+			<p>
+			   The figure shows a small Bayesian network, with evidence D=1 and E=0. The task is to compute
+			   the probability of evidence, which amounts to marginalizing out all the variables, in essence executing a SUM-PRODUCT
+			   algorithm. The AND/OR tree search performs a depth-first traversal, accumulating the result at the root.
+			</p>
+
+
+                        <p>
+                           Further reading:
+                        </p>
+
+			<ul class="research-cite">
+			   <li>
+			      <p>
+                                 <span class="authors">Rina Dechter and Robert Mateescu,</span><br>
+                                 <span class="title"><a href="https://www.ics.uci.edu/~dechter/publications/r126.pdf">AND/OR Search Spaces for Graphical Models</a></span><br>
+                                 <span class="venue">In Artificial Intelligence Journal, Vol. 171, No. 2-3, pages 73-106, 2007.</span>
+			      </p>
+			   </li>
+			   
+			   <li>
+			      <p>
+                                 <span class="authors">Robert Mateescu and Rina Dechter,</span><br>
+                                 <span class="title"><a href="https://www.ics.uci.edu/~dechter/publications/r122.pdf">The Relationship Between AND/OR Search Spaces and Variable Elimination</a></span><br>
+                                 <span class="venue">In proceedings of The Twenty First Conference on Uncertainty in Artificial Intelligence, <a href="http://www.cs.toronto.edu/uai2005/">UAI-05</a>, Edinburgh, Scotland, July 2005.</span>
+			      </p>
+			   </li>
+
+                           <li>
+                              <p>
+                                 <span class="authors">Rina Dechter and Robert Mateescu,</span><br>
+                                 <span class="title"><a href="https://www.ics.uci.edu/~dechter/publications/r117.pdf">The Impact of AND/OR Search Spaces on Constraint Satisfaction and Counting</a></span><br>
+                                 <span class="venue">In proceedings of The Tenth International Conference on Principles and Practice of Constraint Programming, <a href="http://ai.uwaterloo.ca/~cp2004/">CP-04</a>, Toronto, Canada, September 2004.</span>
+                              </p>
+                           </li>
+
+			</ul>			
+
+			&nbsp;<br>
+			&nbsp;<br>
+
+
+                     </div>
+                  </td>
+               </tr>
+
+            </table>
+
+         </td>
+      </tr>
+
+      <tr>
+         <td colspan="2" align="right">
+            &nbsp;<br>
+            <div class="revised">
+               Revised on <!--#config timefmt="%b. %d, %Y"--> <!--#echo var="LAST_MODIFIED"-->
+            </div>
+         </td>
+      </tr>
+
+   </table>
+
+
+</div> <!-- end wrapper -->
+
+
+</body>
+</html>
+
